@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard1.6;net451</TargetFrameworks>
+    <Version>1.0</Version>
+    <Company>Tyrrrz</Company>
+    <Authors>$(Company)</Authors>
+    <Copyright>Copyright (C) 2017 Alexey Golub</Copyright>
+    <Description>Disqus tag helper for ASP.net Core</Description>
+    <PackageTags>asp net core standard disqus tag helper</PackageTags>
+    <PackageProjectUrl>https://github.com/Tyrrrz/AspNetCore.Mvc.Disqus</PackageProjectUrl>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/Tyrrrz/AspNetCore.Mvc.Disqus/master/License.txt</PackageLicenseUrl>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Template.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="1.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Runtime" Version="1.0.2" />
+  </ItemGroup>
+
+</Project>
