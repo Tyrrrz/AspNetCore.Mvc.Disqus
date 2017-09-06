@@ -1,12 +1,12 @@
 ﻿<div id="disqus_thread"></div>
 <script>
     var disqus_config = function () {
-        this.page.url = "[%PageUrl%]";
-        this.page.identifier = "[%PageId%]";
+        this.page.url = "__PageUrl__";
+        this.page.identifier = "__PageId__";
     };
     (function() {
         var d = document, s = d.createElement('script');
-        s.src = '//[%Site%].disqus.com/embed.js';
+        s.src = '//__Site__.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();

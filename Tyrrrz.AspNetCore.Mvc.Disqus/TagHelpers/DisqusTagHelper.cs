@@ -70,13 +70,12 @@ namespace Tyrrrz.AspNetCore.Mvc.Disqus.TagHelpers
 
             // Format the content
             var content = TemplateHtml;
-            content = content.Replace("[%PageUrl%]", pageUrl);
-            content = content.Replace("[%PageId%]", pageId);
-            content = content.Replace("[%Site%]", Site);
+            content = content.Replace("__PageUrl__", pageUrl);
+            content = content.Replace("__PageId__", pageId);
+            content = content.Replace("__Site__", Site);
 
             // Output
-            output.TagName = "div";
-            output.TagMode = TagMode.StartTagAndEndTag;
+            output.TagName = null;
             output.Content.SetHtmlContent(content);
 
             base.Process(context, output);
