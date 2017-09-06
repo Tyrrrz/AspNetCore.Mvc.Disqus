@@ -24,3 +24,7 @@ You will need to specify at least the `site` attribute, which is the shortname f
 You can also specify the `page-url` and `page-id` attributes if you want.
 If they are not set, the current request URL is used instead.
 It's generally recommended to set `page-id` so that your threads can be bound to something less volatile than a URL.
+
+```html
+<disqus site="tyrrrzme" page-id="blog/post1" />
+```
