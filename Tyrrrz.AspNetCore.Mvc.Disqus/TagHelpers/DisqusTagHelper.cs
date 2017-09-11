@@ -2,6 +2,7 @@
 using System.IO;
 using System.Reflection;
 using System.Resources;
+using Microsoft.AspNetCore.Http.Extensions;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.TagHelpers;
@@ -64,7 +65,7 @@ namespace Tyrrrz.AspNetCore.Mvc.Disqus.TagHelpers
             }
 
             // Get page URL and page ID if not set
-            var requestUrl = ViewContext.HttpContext.Request.Host + ViewContext.HttpContext.Request.Path;
+            var requestUrl = ViewContext.HttpContext.Request.GetEncodedUrl();
             var pageUrl = PageUrl ?? requestUrl;
             var pageId = PageId ?? pageUrl;
 
