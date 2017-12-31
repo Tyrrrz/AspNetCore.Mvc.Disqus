@@ -5,7 +5,7 @@
     <Version>1.0.1</Version>
     <Company>Tyrrrz</Company>
     <Authors>$(Company)</Authors>
-    <Copyright>Copyright (C) 2017 Alexey Golub</Copyright>
+    <Copyright>Copyright (C) 2017-2018 Alexey Golub</Copyright>
     <Description>Disqus tag helper for ASP.net Core</Description>
     <PackageTags>asp net core standard disqus tag helper</PackageTags>
     <PackageProjectUrl>https://github.com/Tyrrrz/AspNetCore.Mvc.Disqus</PackageProjectUrl>
